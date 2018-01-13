@@ -1,23 +1,23 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<%@ page import="java.sql.*" %>  
-<%@ page import="java.util.*" %>    
-<%@ page import="java.text.SimpleDateFormat" %> 
-<%@ page import="java.util.Date" %> 
-<%@ page import="java.util.Calendar" %> 
-<%@ page import="java.text.ParseException" %>
-<%@ page session="true" %>    
+	pageEncoding="ISO-8859-1"%>
+<%@ page import="java.sql.*"%>
+<%@ page import="java.util.*"%>
+<%@ page import="java.text.SimpleDateFormat"%>
+<%@ page import="java.util.Date"%>
+<%@ page import="java.util.Calendar"%>
+<%@ page import="java.text.ParseException"%>
+<%@ page session="true"%>
 
 
 <head>
 
 
 </head>
-    
-    
-    
-		
-		<%
+
+
+
+
+<%
 String loc=request.getParameter("loc");
 final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
 final String DB_URL = "jdbc:mysql://localhost:3306/rbcdatabase1";
@@ -279,26 +279,25 @@ out.print(dd);
 
 %>
 
-		
-				
-				
-			</div> <!-- /login-fields -->
-			
-			<div class="login-actions">
-				
-													
-			
-				
-			</div> <!-- .actions -->
-			
-			
-		
-		
-		
-		
-	</div> <!-- /content -->
-	
-</div> <!-- /account-container -->
+
+
+
+</div>
+<!-- /login-fields -->
+
+<div class="login-actions"></div>
+<!-- .actions -->
+
+
+
+
+
+
+</div>
+<!-- /content -->
+
+</div>
+<!-- /account-container -->
 
 
 <!-- Text Under Box -->
@@ -311,25 +310,25 @@ out.print(dd);
 
 </body>
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

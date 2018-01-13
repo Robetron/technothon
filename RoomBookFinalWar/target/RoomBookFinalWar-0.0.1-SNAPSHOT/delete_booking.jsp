@@ -1,8 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
- <%@ page import="com.psl.entity.*" %>   
- <%@ page import ="com.psl.dao.*"  %>   
-    
+	pageEncoding="ISO-8859-1"%>
+<%@ page import="com.psl.entity.*"%>
+<%@ page import="com.psl.dao.*"%>
+
 <%    
     
 String loc=request.getParameter("loc");

@@ -14,8 +14,8 @@
 		<property name="roomID" column="ROOM_ID"></property>
 		<property name="date" column="DATE" type="date"></property>
 		<property name="status" column="STATUS"></property>
-		
-		
+
+
 	</class>
 
 </hibernate-mapping>

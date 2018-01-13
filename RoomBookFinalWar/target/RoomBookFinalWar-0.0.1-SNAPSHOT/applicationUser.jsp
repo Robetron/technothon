@@ -2,7 +2,7 @@
 <%@ page import="com.psl.dao.* "%>
 <%@ page import="java.util.* "%>
 <%@ page import="java.text.* "%>
-<%@ page import="java.util.*"  %>
+<%@ page import="java.util.*"%>
 <%
 
 //get UserName to verify 
@@ -75,152 +75,154 @@ for (Room room : roomList) {
 
 
 <!DOCTYPE html>
-<html lang="en"> 
-  <head>
-    <meta charset="utf-8">
-    <title>Reports - Room Booking Calendar</title>
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Reports - Room Booking Calendar</title>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
-    
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600" rel="stylesheet">
-    <link href="css/font-awesome.css" rel="stylesheet">
-    
-    <link href="css/style.css" rel="stylesheet">
-     <link rel="stylesheet" type="text/css" href="sweet-alert.css">
-     <script src="js/sweet-alert.min.js"></script>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
-  	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-  	<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
-    <!-- <script type="text/javascript" src="jquery-1.11.1.js"></script> -->
-    <link href="css/pages/reports.css" rel="stylesheet"> 
-	 <style type="text/css">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
 
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+
+<link
+	href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600"
+	rel="stylesheet">
+<link href="css/font-awesome.css" rel="stylesheet">
+
+<link href="css/style.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="sweet-alert.css">
+<script src="js/sweet-alert.min.js"></script>
+<link rel="stylesheet"
+	href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+<!-- <script type="text/javascript" src="jquery-1.11.1.js"></script> -->
+<link href="css/pages/reports.css" rel="stylesheet">
+<style type="text/css">
 .CSSTableGenerator {
-        margin:0px;padding:0px;
-        width:100%;
-        border:1px solid #000000;
-        
-        -moz-border-radius-bottomleft:0px;
-        -webkit-border-bottom-left-radius:0px;
-        border-bottom-left-radius:0px;
-        
-        -moz-border-radius-bottomright:0px;
-        -webkit-border-bottom-right-radius:0px;
-        border-bottom-right-radius:0px;
-        
-        -moz-border-radius-topright:0px;
-        -webkit-border-top-right-radius:0px;
-        border-top-right-radius:0px;
-        
-        -moz-border-radius-topleft:0px;
-        -webkit-border-top-left-radius:0px;
-        border-top-left-radius:0px;
-}.CSSTableGenerator table{
-    border-collapse: collapse;
-        border-spacing: 0;
-        width:100%;
-        height:100%;
-        margin:0px;padding:0px;
-}.CSSTableGenerator tr:last-child td:last-child {
-        -moz-border-radius-bottomright:0px;
-        -webkit-border-bottom-right-radius:0px;
-        border-bottom-right-radius:0px;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	border: 1px solid #000000;
+	-moz-border-radius-bottomleft: 0px;
+	-webkit-border-bottom-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+	-moz-border-radius-bottomright: 0px;
+	-webkit-border-bottom-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	-moz-border-radius-topright: 0px;
+	-webkit-border-top-right-radius: 0px;
+	border-top-right-radius: 0px;
+	-moz-border-radius-topleft: 0px;
+	-webkit-border-top-left-radius: 0px;
+	border-top-left-radius: 0px;
 }
+
+.CSSTableGenerator table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+.CSSTableGenerator tr:last-child td:last-child {
+	-moz-border-radius-bottomright: 0px;
+	-webkit-border-bottom-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
 .CSSTableGenerator table tr:first-child th:first-child {
-        -moz-border-radius-topleft:0px;
-        -webkit-border-top-left-radius:0px;
-        border-top-left-radius:0px;
+	-moz-border-radius-topleft: 0px;
+	-webkit-border-top-left-radius: 0px;
+	border-top-left-radius: 0px;
 }
+
 .CSSTableGenerator table tr:first-child th:last-child {
-        -moz-border-radius-topright:0px;
-        -webkit-border-top-right-radius:0px;
-        border-top-right-radius:0px;
-}.CSSTableGenerator tr:last-child th:first-child{
-        -moz-border-radius-bottomleft:0px;
-        -webkit-border-bottom-left-radius:0px;
-        border-bottom-left-radius:0px;
-}.CSSTableGenerator tr:hover td{
-        
-}
- .CSSTableGenerator td,th{
-        vertical-align:middle;
-        
-        
-        border:1px solid #000000;
-        border-width:0px 1px 1px 0px;
-        text-align:left;
-        padding:14px;
-        font-size:10px;
-        font-family:Arial;
-        font-weight:normal;
-        color:#000000;
+	-moz-border-radius-topright: 0px;
+	-webkit-border-top-right-radius: 0px;
+	border-top-right-radius: 0px;
 }
 
-
-
-
-
-
-
-
-.CSSTableGenerator tr:last-child td{
-        border-width:0px 1px 0px 0px;
-}.CSSTableGenerator tr td:last-child{
-        border-width:0px 0px 1px 0px;
-}.CSSTableGenerator tr:last-child td:last-child{
-        border-width:0px 0px 0px 0px;
+.CSSTableGenerator tr:last-child th:first-child {
+	-moz-border-radius-bottomleft: 0px;
+	-webkit-border-bottom-left-radius: 0px;
+	border-bottom-left-radius: 0px;
 }
 
-
- .CSSTableGenerator tr:first-child th{
-                background:-o-linear-gradient(bottom, #e3e3e3 5%, #e9e9e9
-100%);  background:-webkit-gradient( linear, left top, left bottom,
-color-stop(0.05, #e3e3e3), color-stop(1, #e9e9e9) );
-        background:-moz-linear-gradient( center top, #e3e3e3 5%, #e9e9e9 100% );
-        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#e3e3e3",
-endColorstr="#e9e9e9"); background:
--o-linear-gradient(top,#e3e3e3,e9e9e9);
-
-        background-color:#e3e3e3;
-        border:0px solid #000000;
-        text-align:center;
-        border-width:0px 0px 1px 1px;
-        font-size:14px;
-        font-family:Arial;
-        font-weight:bold;
-        color:#000;
-} 
-
-
-.CSSTableGenerator tr:first-child th:first-child{
-        border-width:0px 0px 1px 0px;
-}
-.CSSTableGenerator tr:first-child th:last-child{
-        border-width:0px 0px 1px 1px;
-}
-.c0
-{
-background-color:green;
+.CSSTableGenerator tr:hover td {
+	
 }
 
-.c1
-{
-background-color:red;
+.CSSTableGenerator td, th {
+	vertical-align: middle;
+	border: 1px solid #000000;
+	border-width: 0px 1px 1px 0px;
+	text-align: left;
+	padding: 14px;
+	font-size: 10px;
+	font-family: Arial;
+	font-weight: normal;
+	color: #000000;
 }
 
-.c2
-{
-background-color:orange;
+.CSSTableGenerator tr:last-child td {
+	border-width: 0px 1px 0px 0px;
 }
 
+.CSSTableGenerator tr td:last-child {
+	border-width: 0px 0px 1px 0px;
+}
+
+.CSSTableGenerator tr:last-child td:last-child {
+	border-width: 0px 0px 0px 0px;
+}
+
+.CSSTableGenerator tr:first-child th {
+	background: -o-linear-gradient(bottom, #e3e3e3 5%, #e9e9e9 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e3e3e3
+		), color-stop(1, #e9e9e9));
+	background: -moz-linear-gradient(center top, #e3e3e3 5%, #e9e9e9 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e3e3e3",
+		endColorstr="#e9e9e9");
+	background: -o-linear-gradient(top, #e3e3e3, e9e9e9);
+	background-color: #e3e3e3;
+	border: 0px solid #000000;
+	text-align: center;
+	border-width: 0px 0px 1px 1px;
+	font-size: 14px;
+	font-family: Arial;
+	font-weight: bold;
+	color: #000;
+}
+
+.CSSTableGenerator tr:first-child th:first-child {
+	border-width: 0px 0px 1px 0px;
+}
+
+.CSSTableGenerator tr:first-child th:last-child {
+	border-width: 0px 0px 1px 1px;
+}
+
+.c0 {
+	background-color: green;
+}
+
+.c1 {
+	background-color: red;
+}
+
+.c2 {
+	background-color: orange;
+}
 </style>
 
-    
-						<script type="text/javascript">
+
+<script type="text/javascript">
 						
 	  					$(function() {
 	  						
@@ -336,135 +338,126 @@ background-color:orange;
 	  					   
 	  					   
 	  					</script>
-	  					   
-	  					
-	  					
-	  					
-	 
-  </head>
+
+
+
+
+
+</head>
 
 <body>
 
-<div class="navbar navbar-fixed-top">
-	
-	<div class="navbar-inner">
-		<div class="left">
+	<div class="navbar navbar-fixed-top">
+
+		<div class="navbar-inner">
+			<div class="left">
 				<img alt="" src="PSLLogo.jpg" width="70px" height="70px">
-		
+
+			</div>
+			<div class="container">
+
+				<a class="btn btn-navbar" data-toggle="collapse"
+					data-target=".nav-collapse"> <span class="icon-bar"></span> <span
+					class="icon-bar"></span> <span class="icon-bar"></span>
+				</a> <a class="brand" href="dashboard.html"> Room Booking Calendar </a>
+
+				<div class="nav-collapse" style="font-size: 30">
+					<ul class="nav pull-right">
+
+
+						<li class="dropdown"><a href="#"><i class="icon-user"></i><%=session.getAttribute("firstname")%>
+						</a></li>
+
+
+						<li><a href="signout.jsp"> <i class="icon-cog"></i>
+								Sign Out
+
+						</a></li>
+
+
+					</ul>
+
+
+				</div>
+				<!-- /.nav-collapse	 -->
+
+			</div>
+			<!-- /container -->
+			<div class="right">
+				<img alt="" src="kc-logo-header (1).png" width="70px" height="70px">
+			</div>
 		</div>
-		<div class="container">
-			
-			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</a>
-			
-			<a class="brand" href="dashboard.html">
-				Room Booking Calendar				
-			</a>		
-			
-			<div class="nav-collapse" style="font-size: 30">
-				<ul class="nav pull-right"   >
-	
-			
-				<li class="dropdown"><a href="#"  ><i
-                            class="icon-user"></i><%=session.getAttribute("firstname")%> </a>
-           
-          </li>
-					
-			
-					<li >						
-						<a href="signout.jsp" >
-							<i class="icon-cog"></i> 
-							Sign Out
-							
-						</a>
-						
-											
-					</li>
-			
-				
+		<!-- /navbar-inner -->
+
+	</div>
+	<!-- /navbar -->
+
+
+
+
+
+	<div class="subnavbar">
+
+		<div class="subnavbar-inner">
+
+			<div class="container">
+
+				<ul class="mainnav">
+
+
+
+
+
+					<li class="active"><a href="applicationUser.jsp"> <i
+							class="icon-list-alt"></i> <span>Dashboard</span>
+					</a></li>
+
+
+
+
+
+
+
 				</ul>
-			
-				
-			</div><!-- /.nav-collapse	 -->
-	
-		</div> <!-- /container -->
-		<div class="right">
-		<img alt="" src="kc-logo-header (1).png" width="70px" height="70px">
+
+			</div>
+			<!-- /container -->
+
+
 		</div>
-	</div> <!-- /navbar-inner -->
-	
-</div> <!-- /navbar -->
-    
+		<!-- /subnavbar-inner -->
+
+	</div>
+	<!-- /subnavbar -->
 
 
 
-    
-<div class="subnavbar">
+	<div class="main">
 
-	<div class="subnavbar-inner">
-	
-		<div class="container">
+		<div class="main-inner">
 
-			<ul class="mainnav">
-			
-		
-				
-				
-				
-				<li class="active">
-					<a href="applicationUser.jsp">
-						<i class="icon-list-alt"></i>
-						<span>Dashboard</span>
-					</a>    				
-				</li>
-				
-			
-              
-                
-				
-			
-			
-			</ul>
+			<div class="container">
 
-		</div> <!-- /container -->
-		
-	
-	</div> <!-- /subnavbar-inner -->
+				<div class="row">
 
-</div> <!-- /subnavbar -->
-    
+					<div class="span12">
+						<div class="widget-header">
+							<i class="icon-user"></i>
+							<h3>&nbsp; Select Location</h3>
+							<select id="locationSelect">
+							</select>
+							<h3>Start Date</h3>
+							<input type="text" id="datepicker1">
+							<h3>End Date</h3>
+							<input type="text" id="datepicker2"> <input type="submit"
+								id="go">
+							<!-- <button id="go">Go</button> -->
 
-    
-<div class="main">
-	
-	<div class="main-inner">
+						</div>
 
-	    <div class="container">
-	    	
-	     <div class="row">
-	      	
-	      	<div class="span12">
-	      	<div class="widget-header">
-	      				<i class="icon-user"></i>
-	      				<h3> &nbsp;	      				
-	  					Select Location </h3>
-	  					<select id="locationSelect">
-	  					</select>
-	  					<h3>Start Date</h3>
-	  					<input type="text" id="datepicker1">
-						<h3>End Date</h3>
-	  					<input type="text" id="datepicker2">
-	  					<input type="submit" id="go">
-	  					<!-- <button id="go">Go</button> -->
-	  					
-	  				</div>
-	  				
-	  				
-	  				
-	  				<script type="text/javascript">
+
+
+						<script type="text/javascript">
 	  		$(function() {
 	  			
 	  			//alert("Inside second ready");
@@ -543,71 +536,85 @@ background-color:orange;
 					
 	  			
 	  		});
-	  		</script>			      
-	  				
-	  				
-	  					      
-	      	<div class="info-box">
-               <!-- <div class="row-fluid stats-box"> -->
-                 
-                 
-                 
-               
-               
-               
-               <div id="tablediv" style="width:100%;height:750px;overflow:auto;margin:0 auto;"></div>
-               
-               
-                   
-                    <div >
-                     <table><tr><td><font color="Red">*Please check room availability on DashBoard before proceeding to Book Room</font></td><td width="50px" height="5px" class="c0"></td><td>Available</td> 
-                  <td width="50px" height="5px" class="c2"></td><td>Partial</td>
-                  <td width="50px" height="5px" class="c1"></td><td>Fully Booked</td> </tr>
-                  </table>
-                  <div class="widget-header">
-                  <!-- <button class="button btn btn-primary btn-large" onClick="window.location='bookp.jsp';" id="book">Book Room</button >  -->
-                  
-                  <a href="bookp.jsp" target="_parent"><button class="button btn btn-primary btn-large" id="book">Book Room</button></a>
-                  <a href="recurrenceFormp.jsp" class="button btn btn-primary btn-large">Recurrence </a>
-                  <a href="viewbookingapp.jsp" target="_parent"><button class="button btn btn-primary btn-large" id="view">View My Bookings</button></a>
-                  
-                   </div>
-                  </div>
-          
-                  
-                 
-               </div>
-               
-               
-             </div>
-               
-         </div>
-         </div>      
-	      	
-	
-	      
-	      
-	      
-                
-	      
-			
-	      
-	      
-	    </div> <!-- /container -->
-	     </div>
-	 <!-- /main-inner -->
-    
- <!-- /main -->
-    
+	  		</script>
 
-    
-<!-- <script src="js/jquery-1.7.2.min.js"></script> -->
-<script src="js/excanvas.min.js"></script>
-<script src="js/chart.min.js" type="text/javascript"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/base.js"></script>
 
-  </body>
+
+						<div class="info-box">
+							<!-- <div class="row-fluid stats-box"> -->
+
+
+
+
+
+
+							<div id="tablediv"
+								style="width: 100%; height: 750px; overflow: auto; margin: 0 auto;"></div>
+
+
+
+							<div>
+								<table>
+									<tr>
+										<td><font color="Red">*Please check room
+												availability on DashBoard before proceeding to Book Room</font></td>
+										<td width="50px" height="5px" class="c0"></td>
+										<td>Available</td>
+										<td width="50px" height="5px" class="c2"></td>
+										<td>Partial</td>
+										<td width="50px" height="5px" class="c1"></td>
+										<td>Fully Booked</td>
+									</tr>
+								</table>
+								<div class="widget-header">
+									<!-- <button class="button btn btn-primary btn-large" onClick="window.location='bookp.jsp';" id="book">Book Room</button >  -->
+
+									<a href="bookp.jsp" target="_parent"><button
+											class="button btn btn-primary btn-large" id="book">Book
+											Room</button></a> <a href="recurrenceFormp.jsp"
+										class="button btn btn-primary btn-large">Recurrence </a> <a
+										href="viewbookingapp.jsp" target="_parent"><button
+											class="button btn btn-primary btn-large" id="view">View
+											My Bookings</button></a>
+
+								</div>
+							</div>
+
+
+
+						</div>
+
+
+					</div>
+
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+
+
+		</div>
+		<!-- /container -->
+	</div>
+	<!-- /main-inner -->
+
+	<!-- /main -->
+
+
+
+	<!-- <script src="js/jquery-1.7.2.min.js"></script> -->
+	<script src="js/excanvas.min.js"></script>
+	<script src="js/chart.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/base.js"></script>
+
+</body>
 
 </html>
 

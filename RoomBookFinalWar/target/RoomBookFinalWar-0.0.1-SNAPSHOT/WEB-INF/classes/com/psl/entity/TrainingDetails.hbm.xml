@@ -9,15 +9,15 @@
 			<generator class="native"></generator>
 		</id>
 		<property name="employeeID" column="EMPLOYEE_ID"></property>
-		<property name="roomID" column="ROOM_ID"></property>		
+		<property name="roomID" column="ROOM_ID"></property>
 		<property name="startDate" column="START_DATE" type="date"></property>
 		<property name="endDate" column="END_DATE" type="date"></property>
-		<property name="trainingType" column="TRAINING_TYPE"></property>		
-		<property name="startTime" column="START_TIME"></property>		
+		<property name="trainingType" column="TRAINING_TYPE"></property>
+		<property name="startTime" column="START_TIME"></property>
 		<property name="endTime" column="END_TIME"></property>
 		<property name="ownerName" column="OWNER_NAME"></property>
 		<property name="trainingName" column="TRAINING_NAME"></property>
-		
+
 	</class>
-	
+
 </hibernate-mapping>

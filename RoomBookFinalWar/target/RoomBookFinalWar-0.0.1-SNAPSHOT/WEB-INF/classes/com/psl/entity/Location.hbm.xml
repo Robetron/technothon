@@ -11,11 +11,10 @@
 			<generator class="native"></generator>
 		</id>
 		<property name="locationName" column="LocationName"></property>
-		
-		<!--<property name="Username" column="USERNAME"></property>
-		<property name="Password" column="PASSWORD"></property>
-		<property name="Designation" column="DESIGNATION"></property>
-		<property name="UserType" column="USERTYPE"></property>
-	--></class>
+
+		<!--<property name="Username" column="USERNAME"></property> <property name="Password" 
+			column="PASSWORD"></property> <property name="Designation" column="DESIGNATION"></property> 
+			<property name="UserType" column="USERTYPE"></property> -->
+	</class>
 
 </hibernate-mapping>

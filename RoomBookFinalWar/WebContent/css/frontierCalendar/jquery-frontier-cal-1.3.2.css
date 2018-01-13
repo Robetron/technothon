@@ -1,4 +1,3 @@
-
 /*
 
 When editing make sure the margin, padding, and border sizes are the same for the
@@ -27,13 +26,10 @@ Root calendar element
 /*
 Style shared by all day cells.
 */
-.JFrontierCal .JFrontierCal-Day-Cell,
-.JFrontierCal .JFrontierCal-Day-Cell-Last,
-.JFrontierCal .JFrontierCal-PrevMonth-Day-Cell,
-.JFrontierCal .JFrontierCal-NextMonth-Day-Cell,
-.JFrontierCal .JFrontierCal-NextMonth-Day-Cell-Last,
-.JFrontierCal .JFrontierCal-Day-Cell-Droppable,
-.JFrontierCal .JFrontierCal-Day-Cell-Today {
+.JFrontierCal .JFrontierCal-Day-Cell, .JFrontierCal .JFrontierCal-Day-Cell-Last,
+	.JFrontierCal .JFrontierCal-PrevMonth-Day-Cell, .JFrontierCal .JFrontierCal-NextMonth-Day-Cell,
+	.JFrontierCal .JFrontierCal-NextMonth-Day-Cell-Last, .JFrontierCal .JFrontierCal-Day-Cell-Droppable,
+	.JFrontierCal .JFrontierCal-Day-Cell-Today {
 	padding: 0px;
 	border-bottom: 0px solid #ffffff;
 	border-left: 0px solid #ffffff;
@@ -50,29 +46,28 @@ Style shared by all day cells.
 /*
 Style for day cells on the current month.
 */
-.JFrontierCal .JFrontierCal-Day-Cell,
-.JFrontierCal .JFrontierCal-Day-Cell-Last{
+.JFrontierCal .JFrontierCal-Day-Cell, .JFrontierCal .JFrontierCal-Day-Cell-Last
+	{
 	background-color: #efefef;
-	color: #444444;	
-	background-image:url('images/dayCellCurrentMonth.png');
-	background-repeat:repeat-y;
+	color: #444444;
+	background-image: url('images/dayCellCurrentMonth.png');
+	background-repeat: repeat-y;
 }
 /*
 Style for previous month and next month day cells.
 */
-.JFrontierCal .JFrontierCal-PrevMonth-Day-Cell,
-.JFrontierCal .JFrontierCal-NextMonth-Day-Cell,
-.JFrontierCal .JFrontierCal-NextMonth-Day-Cell-Last {
+.JFrontierCal .JFrontierCal-PrevMonth-Day-Cell, .JFrontierCal .JFrontierCal-NextMonth-Day-Cell,
+	.JFrontierCal .JFrontierCal-NextMonth-Day-Cell-Last {
 	background-color: #cccccc;
 	color: #999999;
-	background-image:url('images/dayCellOtherMonth.png');
-	background-repeat:repeat-y;
+	background-image: url('images/dayCellOtherMonth.png');
+	background-repeat: repeat-y;
 }
 /*
 Style for Saturday cells.
 */
-.JFrontierCal .JFrontierCal-Day-Cell-Last,
-.JFrontierCal .JFrontierCal-NextMonth-Day-Cell-Last {
+.JFrontierCal .JFrontierCal-Day-Cell-Last, .JFrontierCal .JFrontierCal-NextMonth-Day-Cell-Last
+	{
 	border-right: 0px solid #ffffff;
 }
 /*
@@ -89,14 +84,14 @@ Style for current date day cell
 	background-color: #d6e2ff;
 	color: #444444;
 	/*background-image: none;*/
-	background-image:url('images/dayCellToday.png');
+	background-image: url('images/dayCellToday.png');
 }
 /*
 Style for header cells (day name cells at top of calendar)
 */
-.JFrontierCal .JFrontierCal-Header-Cell,
-.JFrontierCal .JFrontierCal-Header-Cell-Last {
-	padding: 0px;	
+.JFrontierCal .JFrontierCal-Header-Cell, .JFrontierCal .JFrontierCal-Header-Cell-Last
+	{
+	padding: 0px;
 	border-top: 0px solid #ffffff;
 	border-bottom: 0px solid #ffffff;
 	border-left: 0px solid #ffffff;
@@ -117,11 +112,9 @@ Style for Saturday header cell at top of calendar.
 /*
 Style for week Header cells (cells for day numbers above each week)
 */
-.JFrontierCal .JFrontierCal-Week-Header-Cell, 
-.JFrontierCal .JFrontierCal-Week-Header-Cell-Last,
-.JFrontierCal .JFrontierCal-PrevMonth-Week-Header-Cell,
-.JFrontierCal .JFrontierCal-NextMonth-Week-Header-Cell,
-.JFrontierCal .JFrontierCal-NextMonth-Week-Header-Cell-Last {
+.JFrontierCal .JFrontierCal-Week-Header-Cell, .JFrontierCal .JFrontierCal-Week-Header-Cell-Last,
+	.JFrontierCal .JFrontierCal-PrevMonth-Week-Header-Cell, .JFrontierCal .JFrontierCal-NextMonth-Week-Header-Cell,
+	.JFrontierCal .JFrontierCal-NextMonth-Week-Header-Cell-Last {
 	padding: 0px;
 	border-left: 0px solid #ffffff;
 	background-color: #dedede;
@@ -135,24 +128,23 @@ Style for week Header cells (cells for day numbers above each week)
 /*
 Style for week header cells for the previous and next month. Make them a little darker.
 */
-.JFrontierCal .JFrontierCal-PrevMonth-Week-Header-Cell,
-.JFrontierCal .JFrontierCal-NextMonth-Week-Header-Cell,
-.JFrontierCal .JFrontierCal-NextMonth-Week-Header-Cell-Last  {
+.JFrontierCal .JFrontierCal-PrevMonth-Week-Header-Cell, .JFrontierCal .JFrontierCal-NextMonth-Week-Header-Cell,
+	.JFrontierCal .JFrontierCal-NextMonth-Week-Header-Cell-Last {
 	background-color: #aaaaaa;
 	color: #333333;
 }
 /*
 Style for Saturday week header cell.
 */
-.JFrontierCal .JFrontierCal-Week-Header-Cell-Last,
-.JFrontierCal .JFrontierCal-NextMonth-Week-Header-Cell-Last {
+.JFrontierCal .JFrontierCal-Week-Header-Cell-Last, .JFrontierCal .JFrontierCal-NextMonth-Week-Header-Cell-Last
+	{
 	border-right: 0px solid #ffffff;
 }
 /*
 Style for agenda items. These are simply default values. Some values can be configured through the API (height, color, background-color, font, etc...)
 */
-.JFrontierCal-Modal-Agenda-Item,
-.JFrontierCal .JFrontierCal-Day-Cell .JFrontierCal-Agenda-Item {
+.JFrontierCal-Modal-Agenda-Item, .JFrontierCal .JFrontierCal-Day-Cell .JFrontierCal-Agenda-Item
+	{
 	height: 15px;
 	/*
 	Don't let text creep outside div
@@ -180,4 +172,3 @@ Style for the "more" link seen when not all agenda items fit within a day cell.
 	white-space: nowrap;
 	text-align: center;
 }
-
