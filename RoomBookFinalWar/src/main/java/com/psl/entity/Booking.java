@@ -3,12 +3,13 @@ package com.psl.entity;
 public class Booking {
 
 	long bookingID;
-	long	roomID;
-	long	trainingID;
+	long roomID;
+	long trainingID;
+
 	public Booking() {
 		// TODO Auto-generated constructor stub
 	}
-	
+
 	public Booking(long bookingID, long roomID, long trainingID) {
 		super();
 		this.bookingID = bookingID;

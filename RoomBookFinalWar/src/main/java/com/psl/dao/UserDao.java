@@ -22,14 +22,15 @@ public class UserDao {
 	public String authenticateUser(String username, String password) {
 		Session session = HibernateUtility.getSesssion();
 
-		Query query = session.createQuery("from User where username='"
-				+ username + "' AND password='" + password + "'");
+		Query query = session.createQuery("from User where username='" + username + "' AND password='" + password + "'");
 
 		List<User> list = query.list();
 		System.out.println("Size" + list.size());
 		for (User user : list) {
-			return user.getUserType() + " " + user.getEmployeeFirstName() + " "
-					+ user.getEmployeeID();
+//			System.out.println(user);
+//			return user.getUsername();
+			return user.getUserType();
+			//return user.getUserType() + " " + user.getEmployeeFirstName() + " "+ user.getEmployeeID();
 
 		}
 		return null;

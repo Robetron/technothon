@@ -9,12 +9,14 @@ com\psl\service\LocationService.class
 com\psl\util\HibernateUtility.class
 com\psl\controller\lookup.class
 com\psl\controller\RoomController.class
+com\psl\tests\LocationTest.class
 com\psl\entity\StatusValue.class
 com\psl\service\TrainingDetailsService.class
 com\psl\entity\User.class
 com\psl\dao\UserDao.class
 com\psl\dao\LocationDao.class
 com\psl\entity\TrainingDetails.class
+com\psl\tests\RoomTest.class
 com\psl\controller\Tabledata.class
 com\psl\entity\Room.class
 com\psl\entity\Training.class
@@ -25,8 +27,10 @@ com\psl\controller\GetLocation.class
 com\psl\service\StatusService.class
 com\psl\service\UserService.class
 com\psl\entity\Booking.class
-com\psl\tests\UserControllerTest.class
+com\psl\tests\BookingTest.class
 com\psl\dao\RoomDao.class
+com\psl\tests\TrainingDetailsTest.class
 com\psl\client\Main.class
 com\psl\entity\Location.class
 com\psl\service\BookingService.class
+com\psl\tests\UserTest.class

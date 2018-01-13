@@ -1,49 +1,39 @@
 package com.psl.entity;
 
 public class Location {
-long locationID;
-String locationName;
-
-
+	long locationID;
+	String locationName;
 
 	public long getLocationId() {
-	return locationID;
-}
+		return locationID;
+	}
 
+	public void setLocationId(long locationId) {
+		this.locationID = locationId;
+	}
 
+	public String getLocationName() {
+		return locationName;
+	}
 
-public void setLocationId(long locationId) {
-	this.locationID = locationId;
-}
-
-
-
-public String getLocationName() {
-	return locationName;
-}
-
-
-
-public void setLocationName(String locationName) {
-	this.locationName = locationName;
-}
-
-
+	public void setLocationName(String locationName) {
+		this.locationName = locationName;
+	}
 
 	public Location(long locationId, String locationName) {
-	super();
-	this.locationID = locationId;
-	this.locationName = locationName;
-}
-public Location() {
-	// TODO Auto-generated constructor stub
-}
+		super();
+		this.locationID = locationId;
+		this.locationName = locationName;
+	}
+
+	public Location() {
+		// TODO Auto-generated constructor stub
+	}
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 	}
-
-
 
 	@Override
 	public String toString() {
