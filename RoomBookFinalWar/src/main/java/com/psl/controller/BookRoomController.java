@@ -15,11 +15,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import com.psl.dao.StatusDao;
-import com.psl.dao.TrainingDetailsDao;
 import com.psl.entity.StatusValue;
 import com.psl.entity.TrainingDetails;
-import com.psl.service.BookingService;
 import com.psl.service.StatusService;
 import com.psl.service.TrainingDetailsService;
 

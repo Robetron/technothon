@@ -8,9 +8,7 @@ import org.hibernate.cfg.AnnotationConfiguration;
 public class HibernateUtility {
 	private static SessionFactory sf;
 	static {
-		sf = new AnnotationConfiguration().configure("hibernate.cfg.xml")
-				.buildSessionFactory();
-
+		sf = new AnnotationConfiguration().configure("hibernate.cfg.xml").buildSessionFactory();
 	}
 
 	public static Session getSesssion() {

@@ -12,7 +12,6 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.json.simple.JSONArray;
 
-import com.psl.dao.LocationDao;
 import com.psl.entity.Location;
 import com.psl.service.LocationService;
 
