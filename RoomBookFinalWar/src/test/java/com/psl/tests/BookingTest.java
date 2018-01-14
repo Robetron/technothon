@@ -21,7 +21,7 @@ public class BookingTest extends TestCase {
 		booking2 = new Booking(444, 222, 6666);
 
 		when(bookingDao.getTrainingIDList(booking1.getRoomID())).thenReturn(Arrays.asList(booking1.getTrainingID(), booking2.getTrainingID()));
-		//when(bookingDao.addBooking(booking1)).thenReturn(true);
+		
 	}
 	
 	@Test
