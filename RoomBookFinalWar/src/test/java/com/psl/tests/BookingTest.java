@@ -29,7 +29,7 @@ public class BookingTest extends TestCase {
 		List<Long> trainingDetailsList = null;
 		trainingDetailsList = bookingDao.getTrainingIDList(booking1.getRoomID());
 		assertNotNull(trainingDetailsList);
-		assertEquals((long)booking1.getTrainingID(), (long)trainingDetailsList.get(1));
+		assertEquals((long)booking1.getTrainingID(), (long)trainingDetailsList.get(0));
 		assertEquals((long)booking2.getTrainingID(), (long)trainingDetailsList.get(1));
 	}
 }

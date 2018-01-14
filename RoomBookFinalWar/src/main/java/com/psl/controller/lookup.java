@@ -56,13 +56,6 @@ public class lookup extends HttpServlet {
 		String ch = userService.authenticateUser(username, password);
 		HttpSession session = request.getSession();
 
-		/*
-		 * List<Location> locationList=locationDao.getLocationList(); for
-		 * (Location location : locationList) {
-		 * System.out.println("LLL"+location); } JSONArray json=new JSONArray();
-		 * 
-		 * json.addAll(locationList);
-		 */
 		if (ch == null) {
 			response.sendRedirect("login.html");
 		} else {
@@ -89,11 +82,7 @@ public class lookup extends HttpServlet {
 				RequestDispatcher rd2 = request
 						.getRequestDispatcher("applicationUser.jsp");
 				rd2.forward(request, response);
-
 			}
-
 		}
-
 	}
-
 }

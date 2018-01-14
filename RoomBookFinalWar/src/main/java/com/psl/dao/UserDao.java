@@ -27,11 +27,7 @@ public class UserDao {
 		List<User> list = query.list();
 		System.out.println("Size" + list.size());
 		for (User user : list) {
-//			System.out.println(user);
-//			return user.getUsername();
-			return user.getUserType();
-			//return user.getUserType() + " " + user.getEmployeeFirstName() + " "+ user.getEmployeeID();
-
+			return user.getUserType() + " " + user.getEmployeeFirstName() + " "+ user.getEmployeeID();
 		}
 		return null;
 	}
@@ -61,15 +57,5 @@ public class UserDao {
 			}
 			return true;
 		}
-
 	}
-
-//	public static void main(String[] args) {
-//		UserDao userd = new UserDao();
-//		User u = new User(101, "anuja", "N", "admin1", "12345", "Administrator");
-//		userd.setUser(u);
-//		userd.addUser(u);
-//		System.out.println(userd.authenticateUser("Ganesh", "ganesh"));
-//	}
-
 }

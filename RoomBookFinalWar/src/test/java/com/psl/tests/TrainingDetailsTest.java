@@ -14,6 +14,7 @@ import java.util.Arrays;
 import junit.framework.TestCase;
 
 import org.junit.BeforeClass;
+import org.junit.Test;
 
 import com.psl.dao.TrainingDetailsDao;
 import com.psl.entity.TrainingDetails;
@@ -46,6 +47,10 @@ public class TrainingDetailsTest extends TestCase{
 
 		when(trainingDetailsDao.isRoomAvailable(11,sdf.parse("2014-12-02"), sdf.parse("2014-12-02"),"9:00", "12:00")).thenReturn(true);
 
+	}
+	@Test
+	public void testSample(){
+		
 	}
 	/*
 	 * @Test public void testGetRoomByLocation() { List<Location> allLocation =
