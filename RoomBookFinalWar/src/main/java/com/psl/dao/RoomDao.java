@@ -57,7 +57,7 @@ public class RoomDao {
 		return list;
 		
 	}
-	public static void main(String op[]){
+	/*public static void main(String op[]){
 		RoomDao dao=new RoomDao();
 		Room room=new Room(101, "Ruby", "lab", 45, "HJ");
 		boolean check=dao.insertRoomDetails(room);
@@ -65,11 +65,11 @@ public class RoomDao {
 			System.out.println("record inserted");
 		else
 			System.out.println("Record not inserted");
-		/*dao.insertRoomDetails(new Room(102, "platium", "assessment", 34, "HJ"));
+		dao.insertRoomDetails(new Room(102, "platium", "assessment", 34, "HJ"));
 		dao.insertRoomDetails(new Room(103, "corel", "assessment", 34, "HJ"));
 		dao.insertRoomDetails(new Room(104, "silver", "lab", 34, "BR"));
 		dao.insertRoomDetails(new Room(102, "vikramsheela", "softskill", 34, "AR/PT"));
 		List<Room> list=dao.getRoomByLocationByType("AR/PT", "lab");
-		System.out.println(list);*/
-	}
+		System.out.println(list);
+	}*/
 }

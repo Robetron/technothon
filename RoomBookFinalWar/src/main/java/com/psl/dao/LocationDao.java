@@ -45,7 +45,7 @@ public class LocationDao {
 			return true;
 		}
 	}
-
+/*
 	public static void main(String[] args) {
 		LocationDao ld = new LocationDao();
 		List<Location> list = ld.getLocationList();
@@ -53,6 +53,6 @@ public class LocationDao {
 		Location l = new Location(101, "PT");
 
 		ld.addLocation(l);
-	}
+	}*/
 
 }

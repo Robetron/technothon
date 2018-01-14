@@ -1,5 +1,4 @@
 com\psl\controller\AddLocationController.class
-com\psl\util\HibernateUtil.class
 com\psl\controller\BookRoomController.class
 com\psl\dao\BookingDao.class
 com\psl\entity\Status.class
@@ -21,6 +20,7 @@ com\psl\controller\Tabledata.class
 com\psl\entity\Room.class
 com\psl\entity\Training.class
 com\psl\service\RoomService.class
+com\psl\tests\UserIT.class
 com\psl\dao\StatusDao.class
 com\psl\dao\TrainingDetailsDao.class
 com\psl\controller\GetLocation.class
@@ -33,4 +33,3 @@ com\psl\tests\TrainingDetailsTest.class
 com\psl\client\Main.class
 com\psl\entity\Location.class
 com\psl\service\BookingService.class
-com\psl\tests\UserTest.class

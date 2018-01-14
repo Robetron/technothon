@@ -311,12 +311,12 @@ System.out.println(update1);
 	
 	
 
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
 		StatusDao status=new StatusDao();
 		status.deletStatus((long) 38);
 		
 		
-	}
+	}*/
 	
 	
 	

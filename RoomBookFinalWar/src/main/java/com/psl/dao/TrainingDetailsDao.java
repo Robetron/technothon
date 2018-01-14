@@ -103,6 +103,7 @@ public class TrainingDetailsDao {
 	}
 
 	
+	@SuppressWarnings("deprecation")
 	public void insertTrainingDetails(TrainingDetails details){
 		System.out.println(details.toString());
 		session.save(details);
